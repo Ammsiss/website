@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name = "author" content = "june tai">
+    <meta name = "description" content = "my personal mobile portfolio website">
+    <title>My Portfolio</title>
+    <link rel = "icon" href = "./websiteicon.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- Header menu -->
+<body>
+    <h1 id="hidden-header" style="position: absolute; top: -1000px;">Hidden Header</h1>
+
+    <nav id="nav-menu">
+        <div class="generic-header">June Tai</div>
+        <div>
+            <ul class="nav-options">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <nav id="expand-nav">
+        <div class="generic-header">June Tai</div>
+        <div class="expand-menu">
+            <div class="expand-icon" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="item-links">
+                <ul>
+                    <li><a href="#projects" onclick="menu()">Projects</a></li>
+                    <li><a href="#info" onclick="menu()">Info</a></li>
+                    <li><a href="#contact" onclick="menu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2 id = "resume">Resume:   <button onclick="window.location.href='https://example.com';" id = 'callaction'>Download</button></h2>
+
+    <!-- Hero Section -->
+    <div class="desktop-first-section">
+        <section id="hero">
+            <h2 id="hero-text">IT Programmer, Developer.</h2> 
+            <img id="hero-image" src="./assets/heroshot.jpg" alt="hero image">
+            <p class="p-elements">ncurses pacman game built for the terminal</p>
+        </section>
+        <hr>
+        <section class="section-blocks">
+            <h2 id="projects" class="headers">Projects</h2>
+
+            <div class="img-links">
+                <a href="https://github.com/Ammsiss/pacman_ncurses" target="_blank"><img class="project-images" src="./assets/heroshot.jpg" alt="project image"></a>
+                <a href="https://github.com/Ammsiss/snake_ncurses" target="_blank"><img class="project-images" src="./assets/snake.png" alt="project image"></a>
+                <a href="https://github.com/Ammsiss/centipede_raylib" target="_blank"><img class="project-images" src="./assets/centi.png" alt="project image"></a>
+            </div>
+        </section>
+    </div>
+    <hr>
+
+    <!-- Mission Statement -->
+    <div class="desktop-second-section">
+        <section class="section-blocks">
+            <h2 id="info" class="headers">My Mission</h2>
+            <p class="p-elements">My mission is to continuously strive for improvement, embracing growth and learning. I believe in the power of teamwork, recognizing that collaboration is the foundation for achieving extraordinary results. My ultimate goal is to create a product that inspires positive change and make a meaningful impact on the world.</p>
+        </section>
+   
+        <hr>
+
+        <!-- Socials Section -->
+        <section class="section-blocks">
+            <h2 id="contact" class="headers">Socials</h2>
+            <div class="img-links">
+                <a href="https://www.linkedin.com/in/junji-tai-63a67a31b/" target="_blank"><img class="project-images" src="./assets/linkedin.webp" alt="linked in contact"></a>
+                <a href="https://github.com/Ammsiss" target="_blank"><img class="project-images" src="./assets/git.png" alt="github contact"></a>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <h2 id = "skills">Skills</h2>
+    <ul id = "skill_list">
+        <li>C++ - I have done various projects with C++ including terminal based console applications, to graphical applications.</li>
+        <li>Networking - I have employed various servers and home lab projects that have built a foundation of networking skills. I have worked with NAS, Hypervisors and Docker containers in various practical ways.</li>
+        <li>Database - I have worked with databases including creating from scratch as well as managing and migration data from existing databases.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Footer section/ End -->
+    <footer>
+	<div class="footer">
+	    <div id="footer-one">
+		<h3>Contact</h3>
+		<p>Email: w0510633@nscc.ca</p>
+	    </div>
+	    <div id="footer-two">
+	        <button id="to-top" onclick="location.href='#hidden-header';">Back To Top</button>
+	    </div>
+	</div>
+    </footer>
+
+    <!-- Link JS file -->
+    <script src="script.js"></script>
+</body>
+
+
+</html>

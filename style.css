@@ -1,0 +1,233 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: gray;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+a, .btn
+{
+    transition: all 300ms ease;
+}
+
+nav, .nav-options
+{
+    display: flex;
+}
+
+#skills
+{
+    padding: 10px;
+}
+
+#resume
+{
+    padding: 10px;
+    text-align: center;
+}
+
+#skill_list
+{
+    padding: 20px;
+}
+
+nav
+{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-options
+{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: purple;
+    text-decoration: underline;
+}
+
+.generic-header
+{
+    font-size: 2rem;
+}
+
+#expand-nav
+{
+    display: none; /* disable expandable menu when in desktop mode */
+}
+
+/* HAMBURGER MENU */
+
+.expand-menu
+{
+    position: relative;
+    display: inline-block;
+}
+
+.expand-icon
+{
+    display: flex; 
+    flex-direction: column; /* vertical stack */
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.expand-icon span
+{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 linear;
+}
+
+.item-links
+{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: fit-content;
+    max-height: 0; /* hidden at first */
+    overflow: hidden; /* if overflow hide content */
+    transition: all 0.3 linear;
+
+    background-color: gray;
+    display: block;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 linear;
+}
+
+.item-links li
+{
+    list-style: none;
+}
+
+.item-links.display
+{
+    max-height: 300px;
+}
+
+.expand-icon.open span:first-child
+{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.expand-icon.open span:nth-child(2)
+{
+    opacity: 0;
+}
+
+.expand-icon.open span:last-child
+{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.expand-icon span:first-child
+{
+    transform: none;
+    opacity: 1;
+}
+
+#hero
+{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#hero-image
+{
+    max-width: 600px;
+    height: auto;
+}
+
+#hero-text
+{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.section-blocks
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-images
+{
+    max-width: 150px;
+    height: auto;
+}
+
+.img-links
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.footer
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#footer-one
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#to-top
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#callaction
+{
+    padding: 10px 20px;
+    background-color: rgb(218, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
